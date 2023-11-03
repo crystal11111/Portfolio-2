@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 90);
   const [index, setIndex] = useState(1);
-  const toRotate = ['Soojeong Cho', 'Web Developer', 'Software Engineer', 'Crystal Cho'];;
+  const toRotate = ['Soojeong Cho', 'Web Developer', 'Software Engineer', 'Mobile Developer', 'Crystal Cho'];
   const period = 900;
 
   useEffect(() => {
@@ -57,8 +57,10 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hi I'm `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>I'm an international student turning 3rd year studying Computing Science at the University of Alberta, Edmonton, Canada. I have interest in Software Engineering, AI, and Bioinformatics. </p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  <p>I'm in my 3rd year at the University of Alberta, (Edmonton, Canada) studying Computing Science. I'm from Seoul, South Korea and I love cycling next to the river :) I have interest in Software Engineering, Moblie Development, AI, and Bioinformatics. </p>
+                  <a href="https://www.linkedin.com/in/soojeong-cho-441827181/" style={{ textDecoration: 'none' }}>
+                    <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  </a>
               </div>}
             </TrackVisibility>
           </Col>
