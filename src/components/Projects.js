@@ -9,6 +9,7 @@ import blueprint from "../assets/img/blueprint.png";
 import spear from "../assets/img/spear.png";
 import gamedev from "../assets/img/Game_project.png";
 import dbms_project from "../assets/img/dbms_project.png";
+import slide_hacked from "../assets/img/slide_hacked.png"
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -40,6 +41,12 @@ export const Projects = () => {
       imgUrl: projImg4,
       linkUrl: "https://github.com/HackEDBetaTeam2023/CPR_Tutorial_HackED_Beta",
     },
+    {
+      title: "Presentation",
+      description: "Our final presentation",
+      imgUrl: slide_hacked,
+      linkUrl: "https://docs.google.com/presentation/d/1JlyydFMKoTvPRhHU-154pJmeqRa90JmyH901LC64uJM/edit?usp=sharing",
+    }
   ];
 
   const projects_2 = [
