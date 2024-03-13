@@ -3,9 +3,12 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/SS505.jpeg";
 import projImg2 from "../assets/img/app-demo.png";
 import projImg3 from "../assets/img/project-organization.png";
+import projImg4 from "../assets/img/cpr_project.jpg";
 import tedx from "../assets/img/TedX.png";
 import blueprint from "../assets/img/blueprint.png";
 import spear from "../assets/img/spear.png";
+import gamedev from "../assets/img/Game_project.png";
+import dbms_project from "../assets/img/dbms_project.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -31,6 +34,12 @@ export const Projects = () => {
       imgUrl: projImg3,
       linkUrl: "https://docs.google.com/document/d/1GBis0i9fKuhcSfBoViEXF8PpGma_pQtqecefyGGgWuM/edit?usp=sharing",
     },
+    {
+      title: "HackED Beta 2023",
+      description: "CPR Tutorial website",
+      imgUrl: projImg4,
+      linkUrl: "https://github.com/HackEDBetaTeam2023/CPR_Tutorial_HackED_Beta",
+    },
   ];
 
   const projects_2 = [
@@ -52,6 +61,21 @@ export const Projects = () => {
       imgUrl: spear,
       linkUrl: "https://www.spaceualberta.ca/",
     },
+  ];
+
+  const projects_3 = [
+    {
+      title: "Game development",
+      description: "Created simple game for fun using Unity and C#.",
+      imgUrl: gamedev,
+      linkUrl: "https://github.com/crystal11111/Flying-Bird",
+    },
+    {
+      title: "DBMS (Database Management System)",
+      description: "Created DBMS for school project using MongoDB, NoSQL, and Python.",
+      imgUrl: dbms_project,
+      linkUrl: "https://drive.google.com/file/d/1wm_aCQeFoBxIWOTVqVJky575PaVmOGUz/view?usp=sharing",
+    }
   ];
 
   return (
@@ -106,9 +130,26 @@ export const Projects = () => {
                         }
                       </Row>
                     </Tab.Pane>
+
+                    <Tab.Pane eventKey="third">
+                      <Row>
+                        {
+                          projects_3.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
+                    </Tab.Pane>
       
                     <Tab.Pane eventKey="first">
-                      <p>Participated in Seoul Women Tech Hackathon 2023 as a Moblie Developer. Was in charge of rewards system and safety resources. </p>
+                      <p>Seoul Women Tech Hackathon 2023 as a Moblie Developer. Was in charge of rewards system and safety resources.</p>
+                      <p>HackED Beta 2023 as a Software Developer. Was in charge of leading the project. </p>
+
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
                       <p>If you wanna know more about me, check my LinkedIn and Connect ME!</p>

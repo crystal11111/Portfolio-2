@@ -37,7 +37,7 @@ export const Skills = () => {
                         <p>My skills that I earned from my experience.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter3} alt="Image" />
+                                <img src={meter1} alt="Image" />
                                 <h5>Python</h5>
                             </div>
                             <div className="item">
