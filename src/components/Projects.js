@@ -9,6 +9,7 @@ import blueprint from "../assets/img/blueprint.png";
 import spear from "../assets/img/spear.png";
 import gamedev from "../assets/img/Game_project.png";
 import dbms_project from "../assets/img/dbms_project.png";
+import qrapp from "../assets/img/301app.png";
 import slide_hacked from "../assets/img/slide_hacked.png"
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
@@ -82,6 +83,12 @@ export const Projects = () => {
       description: "Created DBMS for school project using MongoDB, NoSQL, and Python.",
       imgUrl: dbms_project,
       linkUrl: "https://drive.google.com/file/d/1wm_aCQeFoBxIWOTVqVJky575PaVmOGUz/view?usp=sharing",
+    },
+    {
+      title: "QR Scanner App",
+      description: "Creating an event management system using Java and Firebase.",
+      imgUrl: qrapp,
+      linkUrl: "https://github.com/CMPUT301W24T07/Quick-scanneR",
     }
   ];
 
