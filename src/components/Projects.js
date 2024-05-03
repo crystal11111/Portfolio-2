@@ -12,6 +12,10 @@ import dbms_project from "../assets/img/dbms_project.png";
 import qrapp from "../assets/img/301app.png";
 import slide_hacked from "../assets/img/slide_hacked.png"
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import morganstanley from "../assets/img/morganstanley.png";
+import cpr from "../assets/img/cpr.png";
+import codetogive from "../assets/img/IMG_6343.jpg";
+import notion from "../assets/img/notionhackathon.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -43,11 +47,34 @@ export const Projects = () => {
       linkUrl: "https://github.com/HackEDBetaTeam2023/CPR_Tutorial_HackED_Beta",
     },
     {
+      title: "Website",
+      description: "Our website",
+      imgUrl: cpr,
+    },
+    {
       title: "Presentation",
       description: "Our final presentation",
       imgUrl: slide_hacked,
       linkUrl: "https://docs.google.com/presentation/d/1JlyydFMKoTvPRhHU-154pJmeqRa90JmyH901LC64uJM/edit?usp=sharing",
-    }
+    },
+    {
+      title: "Morgan Stanley Hackathon Code To Give 2024",
+      description: "Web app for non-profit organization, Le Chaînon.",
+      imgUrl: codetogive,
+      linkUrl: "https://github.com/CodeToGive-2024-Team6/CodeToGive-2024",
+    },
+    {
+      title: "Website",
+      description: "Only frontend. If you want to see backend, check and follow the GitHub repository.",
+      imgUrl: morganstanley,
+      linkUrl: "https://codetogive6.web.app/",
+    },
+    {
+      title: "Notion",
+      description: "How we organized our project",
+      imgUrl: notion,
+      linkUrl: "https://www.notion.so/Code-to-Give-2024-d8b26926d73e4dcd8bc06ccba8fda163?pvs=4",
+    },
   ];
 
   const projects_2 = [
@@ -161,8 +188,9 @@ export const Projects = () => {
                     </Tab.Pane>
       
                     <Tab.Pane eventKey="first">
-                      <p>Seoul Women Tech Hackathon 2023 as a Moblie Developer. Was in charge of rewards system and safety resources.</p>
-                      <p>HackED Beta 2023 as a Software Developer. Was in charge of leading the project. </p>
+                      <p>Seoul Women Tech Hackathon 2023</p>
+                      <p>HackED Beta 2023</p>
+                      <p>Morgan Stanley - Code To Give 2024</p>
 
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
