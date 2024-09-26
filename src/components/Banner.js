@@ -57,7 +57,8 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hi I'm `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>I'm in my 4th year at the University of Alberta (Edmonton, Canada), studying Computing Science. Currently, I'm a TA for the Introduction to Software Engineering (CMPUT 301) course. I have interest in Software Engineering, Moblie Development, AI, and Bioinformatics. </p>
+                  <p>I'm in my 4th year at the University of Alberta (Edmonton, Canada), studying Computing Science. </p>
+                  <p>Currently, I'm a TA for the Introduction to Software Engineering (CMPUT 301) course. I have interest in Software Engineering, Moblie Development, AI, and Bioinformatics. </p>
                   <a href="https://www.linkedin.com/in/soojeong-cho-441827181/" style={{ textDecoration: 'none' }}>
                     <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
                   </a>
