@@ -1,0 +1,150 @@
+.carousel-3d-container {
+  height: 500px;
+  perspective: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-3d {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  transform-style: preserve-3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item {
+  position: absolute;
+  transition: all 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
+  cursor: pointer;
+}
+
+.project-cube {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+}
+
+.carousel-item:hover .project-cube {
+  transform: rotateY(180deg);
+}
+
+.cube-face {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  border: 2px solid rgba(78, 205, 196, 0.3);
+}
+
+.cube-face.front {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.cube-face.back {
+  background: rgba(78, 205, 196, 0.9);
+  transform: rotateY(180deg);
+  color: #000;
+  text-align: center;
+  padding: 10px;
+}
+
+.cube-face img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.cube-face h4 {
+  font-size: 14px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.carousel-item.active .project-cube {
+  transform: scale(1.2);
+}
+
+.carousel-item.active .cube-face {
+  border-color: #4ecdc4;
+  box-shadow: 0 0 20px rgba(78, 205, 196, 0.5);
+}
+
+.carousel-controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.carousel-controls .btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  background: rgba(78, 205, 196, 0.2);
+  border: 1px solid #4ecdc4;
+}
+
+.carousel-controls .btn:hover {
+  background: #4ecdc4;
+  color: #000;
+}
+
+.project-details-panel {
+  height: 500px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 12px;
+  padding: 20px;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project-details-panel h3 {
+  color: #4ecdc4;
+  margin-bottom: 15px;
+}
+
+.project-details-panel p {
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.project-details-panel .btn {
+  background: transparent;
+  border: 1px solid #4ecdc4;
+  color: #4ecdc4;
+}
+
+.project-details-panel .btn:hover {
+  background: #4ecdc4;
+  color: #000;
+}
